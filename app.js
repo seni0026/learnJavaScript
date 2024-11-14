@@ -54,3 +54,27 @@ console.log(`Tax (10%): $${tax}`);
 
 const totalCost = cost + tax;
 console.log(`Total cost: $${totalCost}`);
+
+const hour = 7;
+const myName = 'Kevon';
+let greeting = '';
+
+if (hour > 6 && hour < 12) {
+    greeting = 'Good morning';
+} else if (hour > 13 && hour < 17) {
+    greeting = 'Good afternoon';
+} else {
+    greeting = 'Good night';
+}
+
+console.log(`${greeting}, ${myName}!`);
+
+
+// use ternary operator to substitute if else statement
+const age = 5;
+const isHoliday = true; 
+
+const checkForDiscount = (age < 6 || age > 65) && !isHoliday ? 'Discount' :  'No Discount';
+
+console.log(`${checkForDiscount}`);
+
